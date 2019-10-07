@@ -1,0 +1,33 @@
+<!-- <% include ./partials/header %>
+
+        <% blogs.forEach(function(blog){ %>
+            <div>
+                   <h4><%=blog.title%></h4>
+                   <img src="<%=blog.image%>" height="200px" width="400px">
+                    <span><%blog.created%></span>
+                    <p><%=blog.body%></p>
+            </div>
+            <p><a href="/blogs/<%= blog._id %>" class="btn btn-primary">More Info</a></p>
+            <p>
+                    <a href="/blogs/<%= blog._id %>/edit" class="btn btn-primary">Edit</a>
+            </p> -->
+        <!-- <%})%> -->
+
+<!-- <% include ./partials/footer %>   --> 
+
+<% include ./partials/header %>
+
+        <% blogs.forEach(function(blog){ %>
+<div class="card" style="width: 1000px;">
+        <img src="<%= blog.image %>" class="card-img-top" alt="..." style="height: 500px">
+        <div class="card-body">
+          <h5 class="card-title"><%= blog.title %></h5>
+          <p class="card-text"><%= blog.body%></p>
+          <div>Date Posted: <span><%= blog.created.toDateString() %></span></div>
+          <p><a href="/blogs/<%= blog._id %>" class="btn btn-primary">More Info</a></p>
+        </div>
+      </div>
+      <%})%>
+
+<% include ./partials/footer %>  
+    

@@ -1,0 +1,60 @@
+<!-- <% include ./partials/header %>
+<form action="/blogs" method="POST">
+
+        <div class="form-group">
+          <label for="Title">Title: </label>
+          <input type="text" name="blog[title]" class="form-control" id="Title" aria-describedby="TitleHelp" placeholder="Title">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+<!--         </div>
+
+        <div class="form-group">
+          <label for="Image">Image: </label>
+          <input type="text" name="blog[image]" class="form-control" id="Image" placeholder="Image">
+        </div> -->
+
+<!--         <div class="form-group">
+                <label for="Image">Body</label>
+                <input type="text" name="blog[body]" class="form-control" id="body" placeholder="body">
+        </div> -->
+
+<!--         <div>
+
+            <label>Blog Content: </label>
+            <textarea name="blog[body]" id="blogContent" cols="100" rows="5"></textarea>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Post</button> -->
+<!-- </form>
+<% include ./partials/footer %>   -->
+
+<% include ./partials/header %>
+<form action="/blogs" method="POST">
+<div class="card" style="width: 900px;">
+        <form action="/blogs" method="POST">
+
+            <div class="form-group">
+              <label for="Title">Title: </label>
+              <input type="text" name="blog[title]" class="form-control" id="Title" aria-describedby="TitleHelp" placeholder="Title">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+    
+            <div class="form-group">
+              <label for="Image">Image: </label>
+              <input type="text" name="blog[image]" class="form-control" id="Image" placeholder="Image">
+            </div>
+    
+    <!--         <div class="form-group">
+                    <label for="Image">Body</label>
+                    <input type="text" name="blog[body]" class="form-control" id="body" placeholder="body">
+            </div> -->
+    
+            <div>
+    
+                <label>Blog Content: </label>
+                <textarea name="blog[body]" id="blogContent" cols="100" rows="5"></textarea>
+    
+            </div>
+          <button type="submit" class="btn btn-primary">Add Post</button>
+        </div>
+      <% include ./partials/footer %>  
